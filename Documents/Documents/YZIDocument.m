@@ -7,7 +7,24 @@
 //
 
 #import "YZIDocument.h"
+#import "NSString+WordCount.h"
 
 @implementation YZIDocument
+
+-(instancetype)initWithTitle:(NSString *)title textBody:(NSString *)textBody
+{
+    self = [super init] ;
+    if (self){
+    _title = title ;
+    _textBody = textBody ;
+    }
+    return self ;
+    
+}
+
+
+-(int)wordCount  {
+    return [_textBody WordCount] ;
+}
 
 @end

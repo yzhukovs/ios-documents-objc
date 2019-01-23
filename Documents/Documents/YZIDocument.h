@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YZIDocument : NSObject
 
+-(instancetype)initWithTitle:(NSString *)title textBody:(NSString *) textBody ;
+
+@property (nonatomic) NSString *title ;
+@property (nonatomic) int wordCount ;
+@property (nonatomic) NSString *textBody ;
+
 @end
 
 NS_ASSUME_NONNULL_END
