@@ -65,7 +65,7 @@
         <!--New Documents-->
         <scene sceneID="use-Di-FDc">
             <objects>
-                <viewController id="qXH-px-pDU" sceneMemberID="viewController">
+                <viewController id="qXH-px-pDU" customClass="YZINewDocumentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="msw-IO-oru">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,8 +110,17 @@
                         <viewLayoutGuide key="safeArea" id="4NF-9r-93N"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Documents" id="bke-gr-1ZL">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="374-O0-L4H"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="374-O0-L4H">
+                            <connections>
+                                <action selector="saveButton:" destination="qXH-px-pDU" id="U5P-ke-PpD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="enterText" destination="AfN-wz-pJ9" id="she-ts-gaG"/>
+                        <outlet property="titleTextField" destination="Hrq-Ts-j21" id="n6t-6b-ybz"/>
+                        <outlet property="wcLabel" destination="WVy-lf-cIj" id="QzO-3A-kJM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4D-8t-gQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

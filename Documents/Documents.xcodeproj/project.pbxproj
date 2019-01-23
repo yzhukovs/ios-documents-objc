@@ -13,6 +13,9 @@
 		44C2607821F9075600F6CA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C2607621F9075600F6CA35 /* LaunchScreen.storyboard */; };
 		44C2607B21F9075600F6CA35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2607A21F9075600F6CA35 /* main.m */; };
 		44C2608321F9089900F6CA35 /* YZIDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2608221F9089900F6CA35 /* YZIDocumentTableViewController.m */; };
+		44C2608621F90D9B00F6CA35 /* NSString+WordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2608521F90D9B00F6CA35 /* NSString+WordCount.m */; };
+		44C2608921F90F4C00F6CA35 /* YZINewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2608821F90F4C00F6CA35 /* YZINewDocumentViewController.m */; };
+		44C2608C21F9192400F6CA35 /* YZIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C2608B21F9192400F6CA35 /* YZIDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		44C2607A21F9075600F6CA35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44C2608121F9089900F6CA35 /* YZIDocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZIDocumentTableViewController.h; sourceTree = "<group>"; };
 		44C2608221F9089900F6CA35 /* YZIDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZIDocumentTableViewController.m; sourceTree = "<group>"; };
+		44C2608421F90D9B00F6CA35 /* NSString+WordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordCount.h"; sourceTree = "<group>"; };
+		44C2608521F90D9B00F6CA35 /* NSString+WordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordCount.m"; sourceTree = "<group>"; };
+		44C2608721F90F4C00F6CA35 /* YZINewDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZINewDocumentViewController.h; sourceTree = "<group>"; };
+		44C2608821F90F4C00F6CA35 /* YZINewDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZINewDocumentViewController.m; sourceTree = "<group>"; };
+		44C2608A21F9192400F6CA35 /* YZIDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZIDocument.h; sourceTree = "<group>"; };
+		44C2608B21F9192400F6CA35 /* YZIDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZIDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,12 @@
 				44C2606B21F9075400F6CA35 /* AppDelegate.h */,
 				44C2606C21F9075400F6CA35 /* AppDelegate.m */,
 				44C2607121F9075400F6CA35 /* Main.storyboard */,
+				44C2608721F90F4C00F6CA35 /* YZINewDocumentViewController.h */,
+				44C2608821F90F4C00F6CA35 /* YZINewDocumentViewController.m */,
+				44C2608421F90D9B00F6CA35 /* NSString+WordCount.h */,
+				44C2608521F90D9B00F6CA35 /* NSString+WordCount.m */,
+				44C2608A21F9192400F6CA35 /* YZIDocument.h */,
+				44C2608B21F9192400F6CA35 /* YZIDocument.m */,
 				44C2607421F9075600F6CA35 /* Assets.xcassets */,
 				44C2607621F9075600F6CA35 /* LaunchScreen.storyboard */,
 				44C2607921F9075600F6CA35 /* Info.plist */,
@@ -97,6 +112,7 @@
 		44C2606021F9075400F6CA35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YZI;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Yvette Zhukovsky";
 				TargetAttributes = {
@@ -142,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C2607B21F9075600F6CA35 /* main.m in Sources */,
+				44C2608C21F9192400F6CA35 /* YZIDocument.m in Sources */,
+				44C2608921F90F4C00F6CA35 /* YZINewDocumentViewController.m in Sources */,
 				44C2606D21F9075400F6CA35 /* AppDelegate.m in Sources */,
 				44C2608321F9089900F6CA35 /* YZIDocumentTableViewController.m in Sources */,
+				44C2608621F90D9B00F6CA35 /* NSString+WordCount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
